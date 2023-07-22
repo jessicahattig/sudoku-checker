@@ -5,7 +5,7 @@ describe ('Game', () => {
     let game;
     beforeEach(() => {
         game = new Game();
-      });
+    });
 
     test ('It should create new board with zeros', () => {
         expect(game.board).toEqual([[0, 0, 0, 0, 0, 0, 0, 0, 0], 
@@ -18,6 +18,8 @@ describe ('Game', () => {
                                     [0, 0, 0, 0, 0, 0, 0, 0, 0], 
                                     [0, 0, 0, 0, 0, 0, 0, 0, 0]])
     });
+
+    
 
     // test ('It should take a valid number as input into the board array', () => {
     //     game.placeNumber(1, game.board[0[0]]);

@@ -2,14 +2,9 @@
 
 export class Game {
     constructor(){
-        this.board = [[0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-                      [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+        this.board = this.createEmptyBoard();
     }
-}
+        createEmptyBoard() {
+            return Array.from({ length: 9}, () => Array(9).fill(0));
+        }
+    }
